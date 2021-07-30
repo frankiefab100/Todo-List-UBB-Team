@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #507bff;
+  color: #fff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.top {
+  background-color: #9e019e;
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fa-bars {
+  position: absolute;
+  margin-right: 250px;
+}
+
+.todo-container {
+  background-color: #f6f6f6;
+  box-shadow: 2px 2px 5px #00000080, -2px -2px 5px #00000080;
+  color: #222;
+  width: 300px;
+  height: 200px;
+  padding-top: 30px;
+}
+
+.todo-container ul li {
+  list-style: none;
+}
+
+.todo-container ul li label {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 30px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.todo-container ul li input {
+  visibility: hidden;
+  appearance: none;
+}
+
+.todo-container ul li p {
+  position: absolute;
+  margin-left: 30px;
+}
+
+.todo-container ul span {
+  border: 2px solid #222;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+}
+
+.todo-container ul .fa-trash-alt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 220px;
+}
+
+.todo-button {
+  background-color: #9e019e;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 20px;
+  margin-top: -150px;
+}

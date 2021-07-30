@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <h3>Todo-List</h3>
+      </div>
+      <div class="todo-container">
+        <ul>
+          <li>
+            <label for="todoItem" class="list-item"
+              ><input type="checkbox" name="todoItem" id="todoItem" />
+              <p class="text">Style guide creation</p>
+              <span></span>
+              <i class="fas fa-trash-alt"></i>
+            </label>
+          </li>
+          <li>
+            <label for="todoItem" class="list-item"
+              ><input type="checkbox" name="todoItem" id="todoItem" checked />
+              <p class="text">Send wireframes</p>
+              <span></span>
+              <i class="fas fa-trash-alt"></i>
+            </label>
+          </li>
+          <li>
+            <label for="todoItem" class="list-item"
+              ><input type="checkbox" name="todoItem" id="todoItem" />
+              <p class="text">Readability About page</p>
+              <span></span>
+              <i class="fas fa-trash-alt"></i>
+            </label>
+          </li>
+          <li>
+            <label for="todoItem" class="list-item"
+              ><input type="checkbox" name="todoItem" id="todoItem" />
+              <p class="text">Check color contrast</p>
+              <span></span>
+              <i class="fas fa-trash-alt"></i>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <button type="submit" class="todo-button">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        New Task
+      </button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
