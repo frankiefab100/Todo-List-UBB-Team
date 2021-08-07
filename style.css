@@ -40,9 +40,20 @@ body {
   box-shadow: 2px 2px 5px #00000080, -2px -2px 5px #00000080;
   color: #222;
   width: 300px;
-  height: 200px;
-  padding-top: 30px;
+  height: auto;
+  padding-bottom: 10px;
 }
+
+
+.task-input-1{
+  border: none;
+  appearance: none;
+  background-color:transparent;
+  padding: 10px;
+  outline: none;
+  border-bottom: solid 2px #9e019e;
+  width: 200px;
+ }
 
 .todo-container ul li {
   list-style: none;
