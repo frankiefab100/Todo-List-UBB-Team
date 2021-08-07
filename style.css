@@ -70,8 +70,8 @@ body {
 }
 
 .todo-container ul li input {
-  visibility: hidden;
-  appearance: none;
+ visibility: hidden;
+  appearance: none; 
 }
 
 .todo-container ul li p {
@@ -107,4 +107,12 @@ body {
   cursor: pointer;
   padding: 8px 20px;
   margin-top: -150px;
+}
+
+
+.list-item button{
+  background:none;
+  border: none;
+  outline: none;
+  width: 100%;
 }

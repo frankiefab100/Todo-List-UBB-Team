@@ -3,13 +3,18 @@ const newTask = document.querySelector(".todo-button");
 newTask.addEventListener("click", (event)=>{
     
     const newTask = document.querySelector(".task-input-1");
-
+    // input field Validation
     if(newTask.value === ""){
         alert("Please enter a new TASK!");
-    }   else {
+    }  
 
-        document.querySelector(".items").innerHTML += `
+    // Adding a New Task
 
+     else {
+
+        document.getElementById('myUL').innerHTML += `
+
+        <li class = "items">
             <label class = "list-item">
             
             <input type="checkbox" name="todoItem" id="todoItem" />
@@ -23,11 +28,21 @@ newTask.addEventListener("click", (event)=>{
                 
                 <span></span>
 
-                <i class="fas fa-trash-alt"></i>
+                <button class = "delete">
+
+                <i class="fas fa-trash-alt delete"></i>
+
+                </button>
             
             </label>
         
+        </li>
+
         `;
 
     }
 })
+
+
+
+
