@@ -1,48 +1,35 @@
-const newTask = document.querySelector(".todo-button");
+const todoButton = document.querySelector(".todo-button");
+const todoInput = document.querySelector(".todo-input");
+const todoList = document.querySelector(".todo-list");
 
-newTask.addEventListener("click", (event)=>{
-    
-    const newTask = document.querySelector(".task-input-1");
-    // input field Validation
-    if(newTask.value === ""){
-        alert("Please enter a new TASK!");
-    }  
+todoButton.addEventListener("click", () => {
+  displayInputField();
 
-    // Adding a New Task
+  let todoItem = document.createElement("li");
+  todoList.appendChild(todoItem);
+  todoList.innerHTML += `<li>
+  <label for="todoItem" class="execute"
+    ><input type="checkbox" name="todoItem" id="todoItem" />
+    <p class="text">${todoInput.value}</p>
+    <span></span>
+    <i class="fas fa-trash-alt"></i>
+  </label>
+</li>`;
 
-     else {
+  const completedButton = document.querySelector(".execute");
+  completedButton.innerHTML = '<i class="fas fa-check"></i>';
+  completedButton.addEventListener("click", () => {
+    completedButton.classList.toggle("executed");
+  });
 
-        document.getElementById('myUL').innerHTML += `
+  const deleteButton = document.querySelector(".fa-trash-alt");
+  deleteButton.innerHTML = '<i class="fas fa-delete"></i>';
+  deleteButton.addEventListener("click", () => {
+    deleteButton.removeChild(todoItem);
+  });
+});
 
-        <li class = "items">
-            <label class = "list-item">
-            
-            <input type="checkbox" name="todoItem" id="todoItem" />
-                <p>
-                
-                ${
-                    document.querySelector('.task-input-1').value
-                }
-                
-                </p>
-                
-                <span></span>
-
-                <button class = "delete">
-
-                <i class="fas fa-trash-alt delete"></i>
-
-                </button>
-            
-            </label>
-        
-        </li>
-
-        `;
-
-    }
-})
-
-
-
-
+function displayInputField() {
+  todoButton.classList.add("hide");
+  todoInput.classList.remove("hide");
+}
