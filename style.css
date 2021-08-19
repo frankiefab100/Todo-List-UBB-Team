@@ -39,27 +39,27 @@ body {
   background-color: #f6f6f6;
   box-shadow: 2px 2px 5px #00000080, -2px -2px 5px #00000080;
   color: #222;
+  height: 100px;
+  padding-top: 30px;
   width: 300px;
-  height: auto;
-  padding-bottom: 10px;
+  margin-bottom: -15px;
 }
 
-
-.task-input-1{
+.todo-input {
+  background-color: transparent;
   border: none;
-  appearance: none;
-  background-color:transparent;
-  padding: 10px;
+  border-bottom: solid 2px #8b008b;
+  padding: 5px 10px;
+  margin-bottom: 40px;
   outline: none;
-  border-bottom: solid 2px #9e019e;
-  width: 200px;
- }
+  width: 80%;
+}
 
-.todo-container ul li {
+.todo-list li {
   list-style: none;
 }
 
-.todo-container ul li label {
+.todo-list li label {
   position: relative;
   display: flex;
   justify-content: left;
@@ -69,17 +69,17 @@ body {
   cursor: pointer;
 }
 
-.todo-container ul li input {
- visibility: hidden;
-  appearance: none; 
+.todo-list li .todo-item {
+  visibility: hidden;
+  appearance: none;
 }
 
-.todo-container ul li p {
+.todo-list ul li p {
   position: absolute;
   margin-left: 30px;
 }
 
-.todo-container ul span {
+.todo-list ul span {
   border: 2px solid #222;
   border-radius: 50%;
   position: relative;
@@ -90,7 +90,7 @@ body {
   height: 10px;
 }
 
-.todo-container ul .fa-trash-alt {
+.todo-list .fa-trash-alt {
   position: relative;
   display: flex;
   justify-content: center;
@@ -106,13 +106,8 @@ body {
   color: #fff;
   cursor: pointer;
   padding: 8px 20px;
-  margin-top: -150px;
 }
 
-
-.list-item button{
-  background:none;
-  border: none;
-  outline: none;
-  width: 100%;
+.hide {
+  display: none;
 }
